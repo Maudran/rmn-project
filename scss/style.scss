@@ -1,0 +1,242 @@
+$primary-color: #a94dff;
+$txt-font: Tahoma, Geneva, sans-serif;
+$title-font: "Lobster", serif;
+$border-type: solid 1px #bfbfbf;
+$margin-blocks: 5px;
+$background-blocks: #FFF;
+$background-page: #e6ccff;
+$border-shadow: 1px 1px 5px #aaa;
+
+
+.txtcolor {
+	color: $primary-color;
+}
+
+.titlestyle
+{
+	font-family: $title-font;
+}
+
+.txtstyle
+{
+	font-family: $txt-font;
+}
+
+
+#body
+{
+	background-color: $background-page;
+}
+
+
+#header-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-blocks;
+	margin: $margin-blocks;
+	box-shadow: $border-shadow;
+	
+
+		.titles
+	{
+		text-align: center;
+	}
+
+}
+
+#page
+{
+
+	display: flex;
+	margin-top: 3px;
+
+	#sidebar-container
+	{
+		flex-grow: 5;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		padding: 10px;
+		font-family: $txt-font;
+		margin: $margin-blocks;
+		background-color: $background-blocks;
+		box-shadow: $border-shadow;
+
+		.img-container
+		{
+			align-self: center;
+			padding-top: 20px;
+		}
+
+		.details
+		{
+			font-family: $txt-font;
+			padding-top: 20px;
+
+			.mail-to
+			{
+				text-decoration: none;
+
+			}
+
+			.coordonnees
+			{
+				padding: 10px 0px 10px 0px;
+				text-decoration: none;
+
+			}
+		}
+
+		.languages
+
+		{
+			
+		}
+
+		.computer-skills
+
+		{
+			
+		}
+
+
+		.literature
+		{
+			flex-wrap: wrap;
+			border-top: $border-type;
+		}
+
+		.culture
+		{
+			flex-wrap: wrap;
+		}
+
+		.videogames
+		{
+			flex-wrap: wrap;
+			padding-bottom: 10px;
+		}
+
+	}
+
+
+	#body-container
+	{
+		flex-grow: 7;
+
+		.project
+		{
+			
+			flex-wrap: wrap;
+			align-self: center;
+			margin: $margin-blocks;
+			background-color: $background-blocks;
+			box-shadow: $border-shadow;
+
+			.txt-project
+			{
+				padding: 20px;
+				flex-wrap: wrap;
+				font-family: $txt-font;
+			}
+		}
+
+		#resume-container
+		{
+			display: flex;
+			flex-direction: column;
+			background-color: $background-blocks;
+			margin: 10px 5px 5px 5px;
+			box-shadow: $border-shadow;
+
+
+			#prof-experience
+			{
+				display: flex;
+				font-family: $txt-font;
+				flex-direction: column;
+				margin: $margin-blocks;
+				text-align: center;
+				padding: 20px 0 40px 0;
+				
+			}
+
+
+			#training
+			{
+				display: flex;
+				font-family: $txt-font;
+				text-align: center;
+				flex-direction: column;
+				margin: $margin-blocks;
+				padding: 10px 20px 20px 20px;
+			}
+
+		}
+
+	}
+
+}
+
+
+#footer-container
+{
+	font-family: $txt-font;
+	display: flex;
+	padding: 20px;
+	border-top: $border-type;
+	
+
+
+	#social-links 
+	{
+		display: flex;
+		flex-grow: 6;
+		flex-direction: column;
+		align-content: space-around;
+
+		.linkedin
+		{
+			text-decoration: none;
+			padding: 5px;
+		}
+
+		.facebook
+		{
+			text-decoration: none;
+			padding: 5px;
+		}
+
+	}
+
+	#other-links 
+	{
+		display: flex;
+		flex-grow: 6;
+		flex-direction: column;
+
+		.contact-link
+		{
+			text-decoration: none;
+		}
+
+		.cv-link
+		{
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+#contact-body
+{
+	background-color: $background-page;
+}
+
+
+
+
+

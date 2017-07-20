@@ -1,0 +1,108 @@
+.txtcolor {
+  color: #a94dff; }
+
+.titlestyle {
+  font-family: "Lobster", serif; }
+
+.txtstyle {
+  font-family: Tahoma, Geneva, sans-serif; }
+
+#body {
+  background-color: #e6ccff; }
+
+#header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  margin: 5px;
+  box-shadow: 1px 1px 5px #aaa; }
+  #header-container .titles {
+    text-align: center; }
+
+#page {
+  display: flex;
+  margin-top: 3px; }
+  #page #sidebar-container {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10px;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 5px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px #aaa; }
+    #page #sidebar-container .img-container {
+      align-self: center;
+      padding-top: 10px; }
+    #page #sidebar-container .details {
+      font-family: Tahoma, Geneva, sans-serif;
+      padding: 20px 0 20px 0; }
+      #page #sidebar-container .details .mail-to {
+        text-decoration: none; }
+      #page #sidebar-container .details .coordonnees {
+        padding: 10px 0px 10px 0px; }
+    #page #sidebar-container .literature {
+      flex-wrap: wrap;
+      border-top: solid 1px #bfbfbf; }
+    #page #sidebar-container .culture {
+      flex-wrap: wrap; }
+    #page #sidebar-container .videogames {
+      flex-wrap: wrap;
+      padding-bottom: 5px; }
+  #page #body-container {
+    flex-grow: 7; }
+    #page #body-container .project {
+      flex-wrap: wrap;
+      align-self: center;
+      margin: 5px;
+      background-color: #FFF;
+      box-shadow: 1px 1px 5px #aaa; }
+      #page #body-container .project .txt-project {
+        padding: 20px;
+        flex-wrap: wrap;
+        font-family: Tahoma, Geneva, sans-serif; }
+    #page #body-container #resume-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFF;
+      margin: 10px 5px 5px 5px;
+      box-shadow: 1px 1px 5px #aaa; }
+      #page #body-container #resume-container #prof-experience {
+        display: flex;
+        font-family: Tahoma, Geneva, sans-serif;
+        flex-direction: column;
+        margin: 5px;
+        text-align: center;
+        padding: 20px 0 40px 0; }
+      #page #body-container #resume-container #training {
+        display: flex;
+        font-family: Tahoma, Geneva, sans-serif;
+        text-align: center;
+        flex-direction: column;
+        margin: 5px;
+        padding: 20px; }
+
+#footer-container {
+  font-family: Tahoma, Geneva, sans-serif;
+  display: flex;
+  padding: 20px;
+  border-top: solid 1px #bfbfbf; }
+  #footer-container #social-links {
+    display: flex;
+    flex-grow: 6;
+    flex-direction: column;
+    align-content: space-around; }
+    #footer-container #social-links .linkedin {
+      text-decoration: none;
+      padding: 5px; }
+    #footer-container #social-links .facebook {
+      text-decoration: none;
+      padding: 5px; }
+  #footer-container #other-links {
+    display: flex;
+    flex-grow: 6;
+    flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */
