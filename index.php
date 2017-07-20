@@ -14,6 +14,12 @@ require_once 'controller.php';
 	</head>
 	<body id="body">
 
+    <?php
+    if ($view) {
+        include ('view/'.$view);
+    }
+    ?>
+
 	<div id="header-container">
 
 		<div class="titles">
