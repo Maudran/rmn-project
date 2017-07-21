@@ -1,1 +1,10 @@
-RewriteRule ^(.*).htm$ index.php?page=$1 [NC]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # check real file/directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.php [QSA,L]
+
+</IfModule>
