@@ -6,6 +6,7 @@ $margin-blocks: 5px;
 $background-blocks: #FFF;
 $background-page: #e6ccff;
 $border-shadow: 1px 1px 5px #aaa;
+$small-text: 8px;
 
 
 .txtcolor {
@@ -98,7 +99,7 @@ $border-shadow: 1px 1px 5px #aaa;
 		.computer-skills
 
 		{
-			
+
 		}
 
 
@@ -116,7 +117,6 @@ $border-shadow: 1px 1px 5px #aaa;
 		.videogames
 		{
 			flex-wrap: wrap;
-			padding-bottom: 10px;
 		}
 
 	}
@@ -220,11 +220,13 @@ $border-shadow: 1px 1px 5px #aaa;
 		.contact-link
 		{
 			text-decoration: none;
+			padding: 5px;
 		}
 
 		.cv-link
 		{
 			text-decoration: none;
+			padding: 5px;
 		}
 	}
 
@@ -236,7 +238,65 @@ $border-shadow: 1px 1px 5px #aaa;
 	background-color: $background-page;
 }
 
+#contact-header
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: $background-page;
+	border-bottom: $border-type;
+	padding-bottom: 10px;
+	
+	.contact-title
+	{
+		text-align: center;
+	}
+}
 
+#form-wrapper
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 40px;
+
+	.return
+	{
+	text-decoration: none;
+	font-family: $txt-font;
+	}
+
+	#contact-form
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		background-color: $background-blocks;
+		padding: 50px 100px 50px 100px;
+		box-shadow: $border-shadow;
+		font-family: $txt-font;
+
+		.form-note
+		{
+			font-size: $small-text;
+		}
+
+		.div-input
+		{
+			padding: 10px;
+			align-self: center;
+		}
+
+		.contact-input
+		{
+			align-self: center;
+			padding: 10px;
+			font-family: $txt-font;
+		}
+		
+	}
+}
 
 
 

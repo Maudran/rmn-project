@@ -35,22 +35,22 @@
     box-shadow: 1px 1px 5px #aaa; }
     #page #sidebar-container .img-container {
       align-self: center;
-      padding-top: 10px; }
+      padding-top: 20px; }
     #page #sidebar-container .details {
       font-family: Tahoma, Geneva, sans-serif;
-      padding: 20px 0 20px 0; }
+      padding-top: 20px; }
       #page #sidebar-container .details .mail-to {
         text-decoration: none; }
       #page #sidebar-container .details .coordonnees {
-        padding: 10px 0px 10px 0px; }
+        padding: 10px 0px 10px 0px;
+        text-decoration: none; }
     #page #sidebar-container .literature {
       flex-wrap: wrap;
       border-top: solid 1px #bfbfbf; }
     #page #sidebar-container .culture {
       flex-wrap: wrap; }
     #page #sidebar-container .videogames {
-      flex-wrap: wrap;
-      padding-bottom: 5px; }
+      flex-wrap: wrap; }
   #page #body-container {
     flex-grow: 7; }
     #page #body-container .project {
@@ -82,7 +82,7 @@
         text-align: center;
         flex-direction: column;
         margin: 5px;
-        padding: 20px; }
+        padding: 10px 20px 20px 20px; }
 
 #footer-container {
   font-family: Tahoma, Geneva, sans-serif;
@@ -104,5 +104,51 @@
     display: flex;
     flex-grow: 6;
     flex-direction: column; }
+    #footer-container #other-links .contact-link {
+      text-decoration: none;
+      padding: 5px; }
+    #footer-container #other-links .cv-link {
+      text-decoration: none;
+      padding: 5px; }
+
+#contact-body {
+  background-color: #e6ccff; }
+
+#contact-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #e6ccff;
+  border-bottom: solid 1px #bfbfbf;
+  padding-bottom: 10px; }
+  #contact-header .contact-title {
+    text-align: center; }
+
+#form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  #form-wrapper .return {
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif; }
+  #form-wrapper #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #FFF;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 1px 1px 5px #aaa;
+    font-family: Tahoma, Geneva, sans-serif; }
+    #form-wrapper #contact-form .form-note {
+      font-size: 8px; }
+    #form-wrapper #contact-form .div-input {
+      padding: 10px;
+      align-self: center; }
+    #form-wrapper #contact-form .contact-input {
+      align-self: center;
+      padding: 10px;
+      font-family: Tahoma, Geneva, sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

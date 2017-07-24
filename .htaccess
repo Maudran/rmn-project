@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /rmn-project
 
     # check real file/directory
     RewriteCond %{REQUEST_FILENAME} !-f
