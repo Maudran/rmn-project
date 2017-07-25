@@ -5,7 +5,7 @@ $bodyId = 'contact-body';
 // check $_POST
 
 if ( isset($_GET['valid']) && $_GET['valid'] == '1') {
-	$validMsg = "<script>alert(\"Formulaire envoyé!\");</script>";
+	$validMsg = "Formulaire envoyé!";
 }
 
 
@@ -57,30 +57,25 @@ if (isset($_POST['contact'])) {
 	$errors['message'] .= 'Le message donné ne semble pas être valide.<br />';
 	}
 
+	$mysqli = new mysqli("localhost", "root", "", "rmn-project");
 
-	$email_message = "Form details below.\n\n";
-	
+    if ($mysqli->connect_errno) {
+        printf("Échec de la connexion : %s\n", $mysqli->connect_error);
+        exit();
+    }
 
-	 
-	
-	$email_message .= "Civilité: ".($formValues['civility'])."\n";
-	$email_message .= "First Name: ".($formValues['firstname'])."\n";
-	$email_message .= "Last Name: ".($formValues['surname'])."\n";
-	$email_message .= "Company: ".($formValues['company'])."\n";
-	$email_message .= "Email: ".($formValues['email'])."\n";
-	$email_message .= "Telephone: ".($formValues['phone_number'])."\n";
-	$email_message .= "Message: ".($formValues['message'])."\n";
-	
+    $civility = $mysqli->escape_string($formValues['civility']);
+    $firstname = $mysqli->escape_string($formValues['firstname']);
+    $surname = $mysqli->escape_string($formValues['surname']);
+    $company = $mysqli->escape_string($formValues['company']);
+    $email= $mysqli->escape_string($formValues['email']);
+    $phone_number = $mysqli->escape_string($formValues['phone_number']);
+    $message = $mysqli->escape_string($formValues['message']);
 
-	$email = $formValues['email'];
-	//$email_message = '';
 
-	$headers = 'From: '.$email."\r\n".
-	'X-Mailer: PHP/' . phpversion();
-	$emailSent = mail($to, $subject, $email_message, $headers);
+    $mysqli->query("INSERT INTO contact (civility, firstname, surname, company, email, phone_number, message)
+                    VALUES ('$civility', '$firstname', '$surname', '$company', '$email', '$phone_number', '$message')");
 
-	//$errorMsg = 'Une erreur est survenue';   
-    //$errors['civility'] = 'Vous êtes sûr de votre sexe ?';
 	
 	if (!isset($errorMsg)) {
 		header('Location:/rmn-project/contact.htm?valid=1');

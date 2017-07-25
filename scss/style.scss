@@ -223,6 +223,12 @@ $small-text: 8px;
 			padding: 5px;
 		}
 
+		.table-link
+		{
+			text-decoration: none;
+			padding: 5px;
+		}
+
 		.cv-link
 		{
 			text-decoration: none;
@@ -262,8 +268,14 @@ $small-text: 8px;
 
 	.return
 	{
-	text-decoration: none;
-	font-family: $txt-font;
+		flex-direction: column;
+		font-family: $txt-font;
+
+		.line-return
+		{
+			text-decoration: none;
+			text-align: center;
+		}
 	}
 
 	#contact-form
@@ -296,6 +308,25 @@ $small-text: 8px;
 		}
 		
 	}
+}
+
+#table-body
+{
+	background-color: $background-page;
+}
+
+#table-header
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: $background-page;
+    border-bottom: $border-type;
+
+    .table-title
+    {
+      text-align: center;
+    }
 }
 
 

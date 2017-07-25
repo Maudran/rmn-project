@@ -35,6 +35,7 @@ require_once 'controller.php';
 	  	<div id="other-links"> 
 	  		<h3 class="titlestyle">Autre</h3>
 	  		<a href="/rmn-project/contact.htm" title="Me contacter" class="contact-link">Me contacter</a>
+            <a href="/rmn-project/table.htm" title="Afficher tableau" class="table-link">Afficher tableau</a>
 	  		<a href="/rmn-project/CV_maryanne_audran.pdf" title="Mon CV en pdf" target="_blank" class="cv-link">Télécharger mon CV</a>
 	   	</div>
 

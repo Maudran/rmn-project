@@ -7,9 +7,11 @@
 <div id="form-wrapper">
 
 	<?php if ( isset($validMsg) ) : ?>
-		<p><?php echo $validMsg ?></p>
-		<a href="/rmn-project/homeView.php" class="return" title="Retour à la page d'accueil">Retourner à la page d'accueil</a>
-	<?php else: ?>
+		<div class="return">
+            <div class="line-return">Formulaire envoyé! </div>
+		    <div class="line-return"><a href="/rmn-project/homeView.php" title="Retour à la page d'accueil">Retourner à la page d'accueil</a></div>
+        </div>
+    <?php else: ?>
 
 	<form id="contact-form" method="POST" action="/rmn-project/contact.htm" name="contacForm">
 
@@ -21,10 +23,10 @@
 
 			<div class="div-input"><label for="civ-input">Civilité : </label>
 			<select name="contact[civility]" class="contact-input">
-				<option value="monsieur">M.</option>
-				<option value="madame">Mme</option>
-				<option value="mex">Mx</option>
-				<option value="doctor">Dr</option>
+				<option value="Monsieur">M.</option>
+				<option value="Madame">Mme</option>
+				<option value="Mex">Mx</option>
+				<option value="Doctor">Dr</option>
 			</select>
 
 			<?php if (isset($errors) && isset($errors['civility']) ): ?>
@@ -85,8 +87,8 @@
 							message: {
 								required: true,
 								minLength: 10
-							},
-						},
+							}
+                        },
 
 						messages: {
 							firstname: "Veuillez entrer votre prénom",
