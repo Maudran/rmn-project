@@ -107,6 +107,9 @@
     #footer-container #other-links .contact-link {
       text-decoration: none;
       padding: 5px; }
+    #footer-container #other-links .table-link {
+      text-decoration: none;
+      padding: 5px; }
     #footer-container #other-links .cv-link {
       text-decoration: none;
       padding: 5px; }
@@ -130,8 +133,11 @@
   align-content: center;
   padding: 40px; }
   #form-wrapper .return {
-    text-decoration: none;
+    flex-direction: column;
     font-family: Tahoma, Geneva, sans-serif; }
+    #form-wrapper .return .line-return {
+      text-decoration: none;
+      text-align: center; }
   #form-wrapper #contact-form {
     display: flex;
     flex-direction: column;
@@ -150,5 +156,17 @@
       align-self: center;
       padding: 10px;
       font-family: Tahoma, Geneva, sans-serif; }
+
+#table-body {
+  background-color: #e6ccff; }
+
+#table-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #e6ccff;
+  border-bottom: solid 1px #bfbfbf; }
+  #table-header .table-title {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

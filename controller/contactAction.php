@@ -57,13 +57,6 @@ if (isset($_POST['contact'])) {
 	$errors['message'] .= 'Le message donné ne semble pas être valide.<br />';
 	}
 
-	$mysqli = new mysqli("localhost", "root", "", "rmn-project");
-
-    if ($mysqli->connect_errno) {
-        printf("Échec de la connexion : %s\n", $mysqli->connect_error);
-        exit();
-    }
-
     $civility = $mysqli->escape_string($formValues['civility']);
     $firstname = $mysqli->escape_string($formValues['firstname']);
     $surname = $mysqli->escape_string($formValues['surname']);
