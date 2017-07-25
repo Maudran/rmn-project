@@ -169,4 +169,22 @@
   #table-header .table-title {
     text-align: center; }
 
+#table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  #table-wrapper #data-table {
+    display: flex;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px #aaa;
+    padding: 40px;
+    font-family: Tahoma, Geneva, sans-serif; }
+
+.table-return {
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-decoration: none;
+  padding: 10px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -329,5 +329,32 @@ $small-text: 8px;
     }
 }
 
+#table-wrapper
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+
+  #data-table
+  {
+    display: flex;
+    background-color: $background-blocks;
+    box-shadow: $border-shadow;
+    padding: 40px;
+    font-family: $txt-font;
+  }
+
+}
+
+.table-return
+{
+  text-align: center;
+  font-family: $txt-font;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
 
 

@@ -5,24 +5,25 @@
 </header>
 
 <div id="table-wrapper">
-    <div id="table-container">
 
-
-        <table class="data-table">
-        <tr class="data-heading">
-            <?php foreach ($labels as $label) : ?>
-            <th><?php echo $label ?></th>
-            <?php endforeach; ?>
-        </tr>
+        <table id="data-table">
+            <div class="data-heading"><tr>
+                <?php foreach ($labels as $label) : ?>
+                <th><?php echo $label ?></th>
+                <?php endforeach; ?>
+            </tr></div>
         <?php foreach ($result as $contact) : ?>
-            <tr>
+
+            <div class="data-cell"><tr>
                 <?php foreach ($contact as $value) : ?>
                     <td><?php echo $value ?></td>
                 <?php endforeach; ?>
-            </tr>
+            </tr></div>
         <?php endforeach; ?>
+
         </table>
-    </div>
+</div>
 
-
+<div class="table-return">
+    <a href="/rmn-project/homeView.php" title="Retour à la page d'accueil">Retourner à la page d'accueil</a>
 </div>
