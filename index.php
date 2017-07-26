@@ -10,7 +10,7 @@ require_once 'controller.php';
   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      	 rel="stylesheet">
      	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Amaranth|PT+Sans" rel="stylesheet">
      	 <script src="https://use.fontawesome.com/13efbd30e6.js"></script>
 	</head>
 	<body id="<?php echo $bodyId ?>">

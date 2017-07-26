@@ -2,7 +2,7 @@
   color: #662e9e; }
 
 .titlestyle {
-  font-family: "Lobster", serif; }
+  font-family: "Amaranth", sans-serif; }
 
 .txtstyle {
   font-family: "PT sans", sans-serif;
@@ -180,7 +180,7 @@ a:hover {
     padding: 50px 100px 50px 100px;
     font-family: "PT sans", sans-serif; }
     #form-wrapper #contact-form .form-note {
-      font-size: 8px; }
+      font-size: 10px; }
     #form-wrapper #contact-form .div-input {
       padding: 10px;
       align-self: center;

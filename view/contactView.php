@@ -66,49 +66,6 @@
 			</div><br>
 
 			<div class="submit-input"><input type="submit" name="submitBtn" value="Envoyer" class="submit-button"></div>
-
-
-			<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-			<script src="/rmn-project/dist/jquery.validate.js"></script>
-			
-
-			<script>
-
-			$().ready(function() {
-
-				$("#contactForm").validate(
-					{
-						rules:{
-							firstname: "required",
-							surname: "required",
-							
-							email: {
-								required: true,
-								email: true
-								},
-
-							message: {
-								required: true,
-								minLength: 10
-							}
-                        },
-
-						messages: {
-							firstname: "Veuillez entrer votre prénom",
-							surname: "Veuillez entrer votre nom",
-							email: "Veuillez entrer une adresse mail valide",
-
-							message: {
-								required: "Veuillez entrer votre message",
-								minLength: "Votre message doit comporter au moins 10 caractères"
-							}
-						}
-
-					});
-
-			});	
-			</script>
-
 		</div>
 		
 	</form>
