@@ -1,12 +1,24 @@
 .txtcolor {
-  color: #990099; }
+  color: #662e9e; }
 
 .titlestyle {
   font-family: "Lobster", serif; }
 
 .txtstyle {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "PT sans", sans-serif;
   text-decoration: none; }
+
+a:link {
+  color: #662e9e;
+  text-decoration: none; }
+
+a:visited {
+  color: #4d2277; }
+
+a:hover {
+  transition: color 1s ease;
+  color: #4d2277;
+  text-decoration: underline; }
 
 #body {
   background-color: #FFF;
@@ -16,10 +28,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #990099; }
+  background-color: #662e9e;
+  height: 130px;
+  transition: height 1s ease; }
   #header-container .titles {
     text-align: center;
     color: #FFF; }
+
+#header-container:hover {
+  height: 160px; }
 
 #page {
   display: flex;
@@ -30,14 +47,22 @@
     flex-direction: column;
     align-content: flex-start;
     padding: 10px;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: "PT sans", sans-serif;
     margin: 5px;
-    background-color: #FFF; }
+    background-color: #FFF;
+    border-right: solid 1px #bfbfbf; }
     #page #sidebar-container .img-container {
       align-self: center;
-      padding-top: 20px; }
+      padding: 20px 0 20px 0; }
+    #page #sidebar-container .img-avatar {
+      width: 140px;
+      height: 140px;
+      transition: width 1s ease, height 1s ease; }
+    #page #sidebar-container .img-avatar:hover {
+      width: 160px;
+      height: 160px; }
     #page #sidebar-container .details {
-      font-family: Tahoma, Geneva, sans-serif;
+      font-family: "PT sans", sans-serif;
       padding-top: 20px; }
       #page #sidebar-container .details .mail-to {
         text-decoration: none; }
@@ -45,8 +70,7 @@
         padding: 10px 0 10px 0;
         text-decoration: none; }
     #page #sidebar-container .literature {
-      flex-wrap: wrap;
-      border-top: solid 1px #bfbfbf; }
+      flex-wrap: wrap; }
     #page #sidebar-container .culture {
       flex-wrap: wrap; }
     #page #sidebar-container .videogames {
@@ -57,32 +81,33 @@
       flex-wrap: wrap;
       align-self: center;
       margin: 5px;
-      border-bottom: solid 1px #bfbfbf; }
+      border-bottom: solid 1px #bfbfbf;
+      font-size: larger; }
       #page #body-container .project .txt-project {
         padding: 20px;
         flex-wrap: wrap;
-        font-family: Tahoma, Geneva, sans-serif; }
+        font-family: "PT sans", sans-serif; }
     #page #body-container #resume-container {
       display: flex;
       flex-direction: column;
       margin: 10px 5px 5px 5px; }
       #page #body-container #resume-container #prof-experience {
         display: flex;
-        font-family: Tahoma, Geneva, sans-serif;
+        font-family: "PT sans", sans-serif;
         flex-direction: column;
         margin: 5px;
         text-align: center;
         padding: 20px 0 40px 0; }
       #page #body-container #resume-container #training {
         display: flex;
-        font-family: Tahoma, Geneva, sans-serif;
+        font-family: "PT sans", sans-serif;
         text-align: center;
         flex-direction: column;
         margin: 5px;
         padding: 10px 20px 20px 20px; }
 
 #footer-container {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "PT sans", sans-serif;
   display: flex;
   padding: 20px;
   border-top: solid 1px #bfbfbf;
@@ -91,7 +116,8 @@
     display: flex;
     flex-grow: 6;
     flex-direction: column;
-    align-content: space-around; }
+    text-align: center;
+    border-right: solid 1px #bfbfbf; }
     #footer-container #social-links .linkedin {
       text-decoration: none;
       padding: 5px; }
@@ -101,7 +127,8 @@
   #footer-container #other-links {
     display: flex;
     flex-grow: 6;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
     #footer-container #other-links .contact-link {
       text-decoration: none;
       padding: 5px; }
@@ -113,80 +140,118 @@
       padding: 5px; }
 
 #contact-body {
-  background-color: #FFF;
+  background-color: #f2f2f2;
   margin: 0; }
 
 #contact-header {
   display: flex;
   justify-content: center;
-  align-content: center;
-  background-color: #990099;
+  align-items: center;
+  background-color: #662e9e;
   border-bottom: solid 1px #bfbfbf;
-  padding-bottom: 10px; }
+  height: 130px;
+  transition: height 1s ease; }
   #contact-header .contact-title {
     text-align: center;
     color: #FFF; }
 
+#contact-header:hover {
+  height: 160px; }
+
 #form-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
-  padding: 40px; }
+  padding: 40px;
+  background-color: #FFF; }
   #form-wrapper .return {
     flex-direction: column;
-    font-family: Tahoma, Geneva, sans-serif; }
+    font-family: "PT sans", sans-serif;
+    padding: 100px 0 100px 0; }
     #form-wrapper .return .line-return {
       text-decoration: none;
-      text-align: center; }
+      text-align: center;
+      padding: 10px; }
   #form-wrapper #contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
     padding: 50px 100px 50px 100px;
-    font-family: Tahoma, Geneva, sans-serif; }
+    font-family: "PT sans", sans-serif; }
     #form-wrapper #contact-form .form-note {
       font-size: 8px; }
     #form-wrapper #contact-form .div-input {
       padding: 10px;
-      align-self: center; }
+      align-self: center;
+      justify-content: center; }
+    #form-wrapper #contact-form .submit-input {
+      padding: 10px;
+      align-content: center;
+      justify-content: center; }
     #form-wrapper #contact-form .contact-input {
       align-self: center;
       padding: 10px;
-      font-family: Tahoma, Geneva, sans-serif; }
+      font-family: "PT sans", sans-serif;
+      width: 400px; }
+    #form-wrapper #contact-form .civi-input {
+      align-self: center;
+      padding: 10px;
+      font-family: "PT sans", sans-serif; }
+    #form-wrapper #contact-form .submit-button {
+      font-family: "PT sans", sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: larger;
+      padding: 10px;
+      width: 420px;
+      background-color: #662e9e;
+      border-radius: 30px;
+      border: solid 2px #662e9e;
+      transition: background-color 250ms ease, color 250ms ease; }
+    #form-wrapper #contact-form .submit-button:hover {
+      background-color: white;
+      color: #662e9e; }
 
 #table-body {
-  background-color: #FFF;
+  background-color: #f2f2f2;
   margin: 0; }
 
 #table-header {
   display: flex;
   justify-content: center;
-  align-content: center;
-  background-color: #990099;
-  border-bottom: solid 1px #bfbfbf; }
+  align-items: center;
+  background-color: #662e9e;
+  border-bottom: solid 1px #bfbfbf;
+  height: 130px;
+  transition: height 1s ease; }
   #table-header .table-title {
     text-align: center;
     color: #FFF; }
+
+#table-header:hover {
+  height: 160px; }
 
 #table-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 40px; }
+  padding: 40px;
+  background-color: #FFF; }
   #table-wrapper #data-table {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    font-family: Tahoma, Geneva, sans-serif; }
+    font-family: "PT sans", sans-serif; }
     #table-wrapper #data-table .data-cell {
       padding: 20px;
       border-bottom: solid 1px #bfbfbf; }
 
 .table-return {
   text-align: center;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "PT sans", sans-serif;
   text-decoration: none;
-  padding: 10px; }
+  padding: 10px 10px 100px 10px;
+  background-color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */

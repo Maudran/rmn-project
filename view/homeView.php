@@ -10,7 +10,7 @@
 <div id="sidebar-container">
 
 		<div class="img-container">
-	   	 	<img src="/rmn-project/img/avatar.png">
+	   	 	<img src="/rmn-project/img/avatar.png" class="img-avatar">
 	   	</div>
 
 	   	<div class="details">

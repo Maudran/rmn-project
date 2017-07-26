@@ -10,6 +10,7 @@ require_once 'controller.php';
   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      	 rel="stylesheet">
      	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
      	 <script src="https://use.fontawesome.com/13efbd30e6.js"></script>
 	</head>
 	<body id="<?php echo $bodyId ?>">
@@ -33,7 +34,7 @@ require_once 'controller.php';
 		</div>
 
 	  	<div id="other-links"> 
-	  		<h3 class="titlestyle">Autre</h3>
+	  		<h3 class="titlestyle">Autres</h3>
 	  		<a href="/rmn-project/contact.htm" title="Me contacter" class="contact-link">Me contacter</a>
             <a href="/rmn-project/table.htm" title="Afficher tableau" class="table-link">Afficher tableau</a>
 	  		<a href="/rmn-project/CV_maryanne_audran.pdf" title="Mon CV en pdf" target="_blank" class="cv-link">Télécharger mon CV</a>

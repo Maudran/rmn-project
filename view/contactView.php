@@ -20,9 +20,9 @@
 		<?php endif; ?>
 
 		<div>
-
-			<div class="div-input"><label for="civ-input">Civilité : </label>
-			<select name="contact[civility]" class="contact-input">
+            <label for="civ-input" class="civi-input">Civilité : </label>
+			<div class="div-input">
+			<select name="contact[civility]" class="civi-input">
 				<option value="Monsieur">M.</option>
 				<option value="Madame">Mme</option>
 				<option value="Mex">Mx</option>
@@ -57,13 +57,16 @@
 			<div class="div-input"><input type="tel" name="contact[phone_number]" class="contact-input" placeholder="Numéro de téléphone"></div><br>
 
 			<div class="div-input"><textarea name="contact[message]" class="contact-input" placeholder="Votre message" rows="10" cols="50" required></textarea> *
+
+            <div class="form-note">*Champs obligatoires</div>
+
 			<?php if (isset($errors) && isset($errors['message']) ): ?>
 				<span class="error"><?php echo $errors['message'] ?></span>
 			<?php endif; ?>	
 			</div><br>
 
-			<div class="div-input"><input type="submit" name="submitBtn" value="Envoyer" class="contact-input"></div>
-			<div class="form-note">*Champs obligatoires</div>
+			<div class="submit-input"><input type="submit" name="submitBtn" value="Envoyer" class="submit-button"></div>
+
 
 			<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 			<script src="/rmn-project/dist/jquery.validate.js"></script>

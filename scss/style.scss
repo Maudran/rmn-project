@@ -1,14 +1,18 @@
-$primary-color: #990099;
-$txt-font: Tahoma, Geneva, sans-serif;
+$primary-color: #662e9e;
+$txt-font: 'PT sans', sans-serif;
 $title-font: "Lobster", serif;
 $border-type: solid 1px #bfbfbf;
 $margin-blocks: 5px;
 $background-blocks: #FFF;
-$background-page: #990099;
+$background-page: #662e9e;
 $background-footer: #f2f2f2;
 $border-shadow: 1px 1px 2px #aaa;
 $small-text: 8px;
 $txt-color-header: #FFF;
+$transition-links: color 1s ease;
+$transition-header: height 1s ease;
+$title-color: #b3b3b3;
+
 
 
 .txtcolor {
@@ -17,7 +21,7 @@ $txt-color-header: #FFF;
 
 .titlestyle
 {
-	font-family: $title-font;
+  font-family: $title-font;
 }
 
 .txtstyle
@@ -25,6 +29,16 @@ $txt-color-header: #FFF;
 	font-family: $txt-font;
     text-decoration: none;
 }
+
+a:link{
+  color: $primary-color;
+  text-decoration: none;
+}
+a:visited{ color: #4d2277; }
+a:hover{ transition: $transition-links;
+color: #4d2277;
+text-decoration: underline}
+
 
 
 #body
@@ -36,10 +50,13 @@ $txt-color-header: #FFF;
 
 #header-container
 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    background-color: $background-page;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-page;
+  height: 130px;
+  transition: $transition-header;
+
 
 		.titles
 	{
@@ -47,6 +64,11 @@ $txt-color-header: #FFF;
         color: $txt-color-header;
 	}
 
+}
+
+#header-container:hover
+{
+  height: 160px;
 }
 
 #page
@@ -65,13 +87,27 @@ $txt-color-header: #FFF;
 		font-family: $txt-font;
 		margin: $margin-blocks;
 		background-color: $background-blocks;
+        border-right: $border-type;
 
 
 		.img-container
 		{
 			align-self: center;
-			padding-top: 20px;
+			padding: 20px 0 20px 0;
 		}
+
+        .img-avatar
+        {
+          width: 140px;
+          height: 140px;
+          transition: width 1s ease, height 1s ease;
+        }
+
+        .img-avatar:hover
+        {
+          width: 160px;
+          height: 160px;
+        }
 
 		.details
 		{
@@ -80,9 +116,10 @@ $txt-color-header: #FFF;
 
 			.mail-to
 			{
-				text-decoration: none;
+              text-decoration: none;
 
 			}
+
 
 			.coordonnees
 			{
@@ -108,7 +145,6 @@ $txt-color-header: #FFF;
 		.literature
 		{
 			flex-wrap: wrap;
-			border-top: $border-type;
 		}
 
 		.culture
@@ -135,6 +171,7 @@ $txt-color-header: #FFF;
 			align-self: center;
 			margin: $margin-blocks;
             border-bottom: $border-type;
+            font-size: larger;
 
 			.txt-project
 			{
@@ -195,18 +232,20 @@ $txt-color-header: #FFF;
 		display: flex;
 		flex-grow: 6;
 		flex-direction: column;
-		align-content: space-around;
+		text-align: center;
+        border-right: $border-type;
 
 		.linkedin
 		{
-			text-decoration: none;
-			padding: 5px;
+          text-decoration: none;
+          padding: 5px;
 		}
+
 
 		.facebook
 		{
-			text-decoration: none;
-			padding: 5px;
+          text-decoration: none;
+          padding: 5px;
 		}
 
 	}
@@ -216,24 +255,28 @@ $txt-color-header: #FFF;
 		display: flex;
 		flex-grow: 6;
 		flex-direction: column;
+        text-align: center;
 
 		.contact-link
 		{
-			text-decoration: none;
-			padding: 5px;
+          text-decoration: none;
+          padding: 5px;
 		}
+
 
 		.table-link
 		{
-			text-decoration: none;
-			padding: 5px;
+          text-decoration: none;
+          padding: 5px;
 		}
+
 
 		.cv-link
 		{
-			text-decoration: none;
-			padding: 5px;
+          text-decoration: none;
+          padding: 5px;
 		}
+
 	}
 
 }
@@ -241,7 +284,7 @@ $txt-color-header: #FFF;
 
 #contact-body
 {
-	background-color: $background-blocks;
+	background-color: $background-footer;
     margin: 0;
 }
 
@@ -249,10 +292,11 @@ $txt-color-header: #FFF;
 {
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	background-color: $background-page;
 	border-bottom: $border-type;
-	padding-bottom: 10px;
+    height: 130px;
+    transition: $transition-header;
 	
 	.contact-title
 	{
@@ -261,22 +305,32 @@ $txt-color-header: #FFF;
 	}
 }
 
+#contact-header:hover
+{
+  height: 160px;
+}
+
 #form-wrapper
 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
 	padding: 40px;
+    background-color: $background-blocks;
+
 
 	.return
 	{
 		flex-direction: column;
 		font-family: $txt-font;
+        padding: 100px 0 100px 0;
+
 
 		.line-return
 		{
-			text-decoration: none;
-			text-align: center;
+          text-decoration: none;
+          text-align: center;
+          padding: 10px;
 		}
 	}
 
@@ -298,21 +352,58 @@ $txt-color-header: #FFF;
 		{
 			padding: 10px;
 			align-self: center;
+            justify-content: center;
 		}
+
+        .submit-input
+        {
+          padding: 10px;
+          align-content: center;
+          justify-content: center;
+        }
 
 		.contact-input
 		{
 			align-self: center;
 			padding: 10px;
 			font-family: $txt-font;
+            width: 400px;
 		}
+
+        .civi-input
+        {
+          align-self: center;
+          padding: 10px;
+          font-family: $txt-font;
+        }
+
+
+        .submit-button
+        {
+          font-family: $txt-font;
+          color: white;
+          font-weight: bold;
+          font-size: larger;
+          padding: 10px;
+          width: 420px;
+          background-color: $primary-color;
+          border-radius: 30px;
+          border: solid 2px $primary-color;
+          transition: background-color 250ms ease, color 250ms ease;
+        }
+
+        .submit-button:hover
+        {
+          background-color: white;
+          color: $primary-color;
+        }
 		
 	}
 }
 
 #table-body
 {
-	background-color: $background-blocks;
+	background-color: $background-footer;
     margin: 0;
 }
 
@@ -320,9 +411,11 @@ $txt-color-header: #FFF;
 {
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	background-color: $background-page;
     border-bottom: $border-type;
+    height: 130px;
+    transition: $transition-header;
 
     .table-title
     {
@@ -331,12 +424,18 @@ $txt-color-header: #FFF;
     }
 }
 
+#table-header:hover
+{
+  height: 160px;
+}
+
 #table-wrapper
 {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 40px;
+  background-color: $background-blocks;
 
   #data-table
   {
@@ -359,7 +458,8 @@ $txt-color-header: #FFF;
   text-align: center;
   font-family: $txt-font;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 10px 100px 10px;
+  background-color: $background-blocks;
 }
 
 
