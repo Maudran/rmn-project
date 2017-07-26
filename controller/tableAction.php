@@ -6,7 +6,11 @@ $contactFields = array(
     'civility' => 'Civilité',
     'firstname' => 'Prénom',
     'surname' => 'Nom',
-    'company' => 'Entreprise'
+    'company' => 'Entreprise',
+    'email' => 'Email',
+    'phone_number' => 'Téléphone',
+    'message' => 'Message'
+
 );
 
 

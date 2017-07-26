@@ -1,24 +1,25 @@
 .txtcolor {
-  color: #a94dff; }
+  color: #990099; }
 
 .titlestyle {
   font-family: "Lobster", serif; }
 
 .txtstyle {
-  font-family: Tahoma, Geneva, sans-serif; }
+  font-family: Tahoma, Geneva, sans-serif;
+  text-decoration: none; }
 
 #body {
-  background-color: #e6ccff; }
+  background-color: #FFF;
+  margin: 0; }
 
 #header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFF;
-  margin: 5px;
-  box-shadow: 1px 1px 5px #aaa; }
+  background-color: #990099; }
   #header-container .titles {
-    text-align: center; }
+    text-align: center;
+    color: #FFF; }
 
 #page {
   display: flex;
@@ -31,8 +32,7 @@
     padding: 10px;
     font-family: Tahoma, Geneva, sans-serif;
     margin: 5px;
-    background-color: #FFF;
-    box-shadow: 1px 1px 5px #aaa; }
+    background-color: #FFF; }
     #page #sidebar-container .img-container {
       align-self: center;
       padding-top: 20px; }
@@ -42,7 +42,7 @@
       #page #sidebar-container .details .mail-to {
         text-decoration: none; }
       #page #sidebar-container .details .coordonnees {
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0 10px 0;
         text-decoration: none; }
     #page #sidebar-container .literature {
       flex-wrap: wrap;
@@ -57,8 +57,7 @@
       flex-wrap: wrap;
       align-self: center;
       margin: 5px;
-      background-color: #FFF;
-      box-shadow: 1px 1px 5px #aaa; }
+      border-bottom: solid 1px #bfbfbf; }
       #page #body-container .project .txt-project {
         padding: 20px;
         flex-wrap: wrap;
@@ -66,9 +65,7 @@
     #page #body-container #resume-container {
       display: flex;
       flex-direction: column;
-      background-color: #FFF;
-      margin: 10px 5px 5px 5px;
-      box-shadow: 1px 1px 5px #aaa; }
+      margin: 10px 5px 5px 5px; }
       #page #body-container #resume-container #prof-experience {
         display: flex;
         font-family: Tahoma, Geneva, sans-serif;
@@ -88,7 +85,8 @@
   font-family: Tahoma, Geneva, sans-serif;
   display: flex;
   padding: 20px;
-  border-top: solid 1px #bfbfbf; }
+  border-top: solid 1px #bfbfbf;
+  background-color: #f2f2f2; }
   #footer-container #social-links {
     display: flex;
     flex-grow: 6;
@@ -115,17 +113,19 @@
       padding: 5px; }
 
 #contact-body {
-  background-color: #e6ccff; }
+  background-color: #FFF;
+  margin: 0; }
 
 #contact-header {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #e6ccff;
+  background-color: #990099;
   border-bottom: solid 1px #bfbfbf;
   padding-bottom: 10px; }
   #contact-header .contact-title {
-    text-align: center; }
+    text-align: center;
+    color: #FFF; }
 
 #form-wrapper {
   display: flex;
@@ -143,9 +143,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    background-color: #FFF;
     padding: 50px 100px 50px 100px;
-    box-shadow: 1px 1px 5px #aaa;
     font-family: Tahoma, Geneva, sans-serif; }
     #form-wrapper #contact-form .form-note {
       font-size: 8px; }
@@ -158,16 +156,18 @@
       font-family: Tahoma, Geneva, sans-serif; }
 
 #table-body {
-  background-color: #e6ccff; }
+  background-color: #FFF;
+  margin: 0; }
 
 #table-header {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #e6ccff;
+  background-color: #990099;
   border-bottom: solid 1px #bfbfbf; }
   #table-header .table-title {
-    text-align: center; }
+    text-align: center;
+    color: #FFF; }
 
 #table-wrapper {
   display: flex;
@@ -176,10 +176,12 @@
   padding: 40px; }
   #table-wrapper #data-table {
     display: flex;
-    background-color: #FFF;
-    box-shadow: 1px 1px 5px #aaa;
+    flex-direction: column;
     padding: 40px;
     font-family: Tahoma, Geneva, sans-serif; }
+    #table-wrapper #data-table .data-cell {
+      padding: 20px;
+      border-bottom: solid 1px #bfbfbf; }
 
 .table-return {
   text-align: center;
