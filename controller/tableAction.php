@@ -2,39 +2,26 @@
 $view = 'tableView.php';
 $bodyId = 'table-body';
 
-$contactFields = array(
-    'civility' => 'Civilité',
-    'firstname' => 'Prénom',
-    'surname' => 'Nom',
-    'company' => 'Entreprise',
-    'email' => 'Email',
-    'phone_number' => 'Téléphone',
-    'message' => 'Message'
+/*if (isset($_GET['delete'])) {
 
-);
+            $deleteId = $_GET['delete'];
+            $query = sprintf("DELETE FROM contact WHERE id= %d", $deleteId);
+            $mysqli->query($query);
+
+};*/
 
 
-$request = $mysqli->query("SELECT * FROM contact");
-$result = array();
-
-$labels = array();
-
-while ($property = mysqli_fetch_field($request)) {
-    if ( array_key_exists($property->name, $contactFields) ) {
-        $labels[] = $contactFields[$property->name];
-    }
-}
-
-//showing all data
-while ($row = mysqli_fetch_array($request,MYSQLI_ASSOC)) {
-
-    $newContact = array();
-
-    foreach ( $row as $key => $value ) {
-        if ( array_key_exists($key, $contactFields) ) {
-            $newContact[$key] = $value;
-        }
+if (isset($_GET['delete'])) {
+    if ( contact::delete() ) {
+        $successMsg = "Le contact a été correctement supprimé";
+    } else {
+        $errorMsg = "Une erreur est survenue";
     }
 
-    $result[] = $newContact;
+
 }
+
+$resultModel = contact::getAll();
+
+$labels = $resultModel['labels'];
+$result = $resultModel['result'];

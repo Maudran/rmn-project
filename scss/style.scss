@@ -46,7 +46,7 @@ a:link{
 a:visited{ color: #4d2277; }
 a:hover{ transition: $transition-links;
 color: #4d2277;
-text-decoration: underline}
+text-decoration: none}
 
 
 
@@ -438,6 +438,29 @@ text-decoration: underline}
   height: 160px;
 }
 
+#delete-wrapper
+{
+	diplay:flex;
+	justify-content: center;
+	align-content: center;
+	background-color: $background-blocks;
+	padding: 20px;
+
+	.delete-msg{
+		font-family: $txt-font;
+		color: #00e600;
+		text-align: center;
+	}
+
+	.delete-error
+	{
+		font-family: $txt-font;
+		color: red;
+		text-align: center;
+	}
+
+}
+
 #table-wrapper
 {
   display: flex;
@@ -445,6 +468,7 @@ text-decoration: underline}
   align-content: center;
   padding: 40px;
   background-color: $background-blocks;
+
 
   #data-table
   {
@@ -457,6 +481,13 @@ text-decoration: underline}
     {
       padding: 20px;
       border-bottom: $border-type;
+    }
+
+    .data-delete
+    {
+	  padding: 20px;
+	  border-bottom: $border-type;
+	  text-align: center;
     }
   }
 

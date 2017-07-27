@@ -5,13 +5,15 @@ require_once 'controller.php';
 <html>
 	<head>
     	<title>CV de Maryanne</title>
-    	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta charset="utf-8">
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   		<link rel="stylesheet" type="text/css" href="/rmn-project/css/style.css" media="screen" />
   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      	 rel="stylesheet">
      	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
          <link href="https://fonts.googleapis.com/css?family=Amaranth|PT+Sans" rel="stylesheet">
      	 <script src="https://use.fontawesome.com/13efbd30e6.js"></script>
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	</head>
 	<body id="<?php echo $bodyId ?>">
 
