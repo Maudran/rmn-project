@@ -32,14 +32,16 @@ require_once 'controller.php';
 		<div id="social-links">
 			<h3 class="titlestyle">Réseaux sociaux</h3>
 	  		<a href="https://www.linkedin.com/in/maryanne-audran-b16569119/" title="LinkedIn" target="_blank" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-	  		<a href="https://www.facebook.com/maryanne.audran.9" title="Facebook" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+	  		<a href="https://github.com/Maudran" title="GitHub" target="_blank" class="github"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://www.facebook.com/maryanne.audran.9" title="Facebook" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
 		</div>
 
 	  	<div id="other-links"> 
 	  		<h3 class="titlestyle">Autres</h3>
 	  		<a href="/rmn-project/contact.htm" title="Me contacter" class="contact-link">Me contacter</a>
+            <a href="/rmn-project/CV_maryanne_audran.pdf" title="Mon CV en pdf" target="_blank" class="cv-link">Télécharger mon CV</a>
             <a href="/rmn-project/table.htm" title="Afficher tableau" class="table-link">Afficher tableau</a>
-	  		<a href="/rmn-project/CV_maryanne_audran.pdf" title="Mon CV en pdf" target="_blank" class="cv-link">Télécharger mon CV</a>
+
 	   	</div>
 
 	 </div>

@@ -124,6 +124,9 @@ a:hover {
     #footer-container #social-links .facebook {
       text-decoration: none;
       padding: 5px; }
+    #footer-container #social-links .github {
+      text-decoration: none;
+      padding: 5px; }
   #footer-container #other-links {
     display: flex;
     flex-grow: 6;

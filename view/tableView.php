@@ -67,7 +67,7 @@ $(function() {
     $('.delete-link').on("click", function(event) {
         event.preventDefault();
 
-        var r = confirm("Tu veux supprimer ça là ? T'es sûr !?");
+        var r = confirm("Voulez-vous vraiment supprimer ce contact?");
         if (r === true) {
             window.location = $(this).attr('href');
         }
