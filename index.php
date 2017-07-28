@@ -17,6 +17,7 @@ require_once 'controller.php';
      	 <script src="https://use.fontawesome.com/13efbd30e6.js"></script>
          <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
          <script src="/rmn-project/js/sweetalert.min.js"></script>
+         <script src="/rmn-project/js/jquery.validate.min.js"></script>
          <link rel="stylesheet" type="text/css" href="/rmn-project/css/sweetalert.css">
 	</head>
 	<body id="<?php echo $bodyId ?>">

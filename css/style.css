@@ -244,21 +244,6 @@ a:hover {
 #table-header:hover {
   height: 160px; }
 
-#delete-wrapper {
-  diplay: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: #FFF;
-  padding: 20px; }
-  #delete-wrapper .delete-msg {
-    font-family: "PT sans", sans-serif;
-    color: #00e600;
-    text-align: center; }
-  #delete-wrapper .delete-error {
-    font-family: "PT sans", sans-serif;
-    color: red;
-    text-align: center; }
-
 #table-wrapper {
   display: flex;
   justify-content: center;
@@ -284,5 +269,10 @@ a:hover {
   text-decoration: none;
   padding: 10px 10px 100px 10px;
   background-color: #FFF; }
+
+label.error {
+  font-family: "PT sans", sans-serif;
+  padding: 5px;
+  color: #DD6B55; }
 
 /*# sourceMappingURL=style.css.map */

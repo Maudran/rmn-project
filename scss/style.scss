@@ -446,29 +446,6 @@ text-decoration: none}
   height: 160px;
 }
 
-#delete-wrapper
-{
-	diplay:flex;
-	justify-content: center;
-	align-content: center;
-	background-color: $background-blocks;
-	padding: 20px;
-
-	.delete-msg{
-		font-family: $txt-font;
-		color: #00e600;
-		text-align: center;
-	}
-
-	.delete-error
-	{
-		font-family: $txt-font;
-		color: red;
-		text-align: center;
-	}
-
-}
-
 #table-wrapper
 {
   display: flex;
@@ -509,6 +486,12 @@ text-decoration: none}
   text-decoration: none;
   padding: 10px 10px 100px 10px;
   background-color: $background-blocks;
+}
+
+label.error {
+	font-family: $txt-font;
+	padding: 5px;
+	color: #DD6B55;
 }
 
 
