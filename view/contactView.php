@@ -73,3 +73,7 @@
 	endif;
 	?>
 </div>
+
+<div class="table-return">
+    <a href="/rmn-project/homeView.php" class="txtstyle" title="Retour à la page d'accueil">Retourner à la page d'accueil</a>
+</div>

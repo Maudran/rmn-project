@@ -53,7 +53,8 @@ a:hover {
     border-right: solid 1px #bfbfbf; }
     #page #sidebar-container .img-container {
       align-self: center;
-      padding: 20px 0 20px 0; }
+      padding: 20px 0 20px 0;
+      margin-left: 10px; }
     #page #sidebar-container .img-avatar {
       width: 140px;
       height: 140px;
@@ -63,18 +64,26 @@ a:hover {
       height: 160px; }
     #page #sidebar-container .details {
       font-family: "PT sans", sans-serif;
-      padding-top: 20px; }
+      padding-top: 20px;
+      margin-left: 10px; }
       #page #sidebar-container .details .mail-to {
         text-decoration: none; }
       #page #sidebar-container .details .coordonnees {
         padding: 10px 0 10px 0;
         text-decoration: none; }
+    #page #sidebar-container .languages {
+      margin-left: 10px; }
+    #page #sidebar-container .computer-skills {
+      margin-left: 10px; }
     #page #sidebar-container .literature {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-left: 10px; }
     #page #sidebar-container .culture {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-left: 10px; }
     #page #sidebar-container .videogames {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-left: 10px; }
   #page #body-container {
     flex-grow: 7; }
     #page #body-container .project {
@@ -109,7 +118,7 @@ a:hover {
 #footer-container {
   font-family: "PT sans", sans-serif;
   display: flex;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   border-top: solid 1px #bfbfbf;
   background-color: #f2f2f2; }
   #footer-container #social-links {

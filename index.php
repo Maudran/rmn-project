@@ -12,8 +12,12 @@ require_once 'controller.php';
      	 rel="stylesheet">
      	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
          <link href="https://fonts.googleapis.com/css?family=Amaranth|PT+Sans" rel="stylesheet">
+         <link rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
      	 <script src="https://use.fontawesome.com/13efbd30e6.js"></script>
          <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+         <script src="/rmn-project/js/sweetalert.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="/rmn-project/css/sweetalert.css">
 	</head>
 	<body id="<?php echo $bodyId ?>">
 
@@ -45,7 +49,5 @@ require_once 'controller.php';
 	   	</div>
 
 	 </div>
-
-	 <?php /*echo '<p>Cette ligne est écrite en PHP '.rand(0, 9999).'</p>';*/ ?>
   	</body>
 </html>

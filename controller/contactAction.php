@@ -60,8 +60,4 @@ if (isset($_POST['contact'])) {
             $errorMsg = 'Une erreur est survenue';
         }
     }
-
-
-
-
 }

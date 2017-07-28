@@ -14,6 +14,21 @@ class contact {
     );
 
 
+    public static function getDB() {
+        $mysqli = new mysqli("localhost", "root", "", "rmn-project");
+
+        $mysqli->set_charset("utf8");
+
+        if ($mysqli->connect_errno) {
+            printf("Échec de la connexion : %s\n", $mysqli->connect_error);
+            exit();
+        }
+        else {
+            return $mysqli;
+        }
+    }
+
+
     /**
      * Get input data from form
      * Save it into DB
@@ -46,12 +61,11 @@ class contact {
 
     /**
      * Delete 1 contact from DB
+     * @param $deleteId ID in DB to delete
      */
-    public static function delete() {
+    public static function delete($deleteId) {
 
         global $mysqli;
-
-        $deleteId = $_GET['delete'];
         $query = sprintf("DELETE FROM contact WHERE id= %d", $deleteId);
         $res = $mysqli->query($query);
 

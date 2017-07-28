@@ -47,7 +47,7 @@
                     </td>
                 <?php endforeach; ?>
 
-                <td class="data-delete"><a href="/rmn-project/table.htm?delete=<?php echo $contact['id'] ?>" class="delete-link fa fa-trash-o" aria-hidden="true"></a></td>
+                <td class="data-delete"><a href="/rmn-project/table.htm?delete=<?php echo $contact['id'] ?>" data-id="<?php echo $contact['id'] ?>" class="delete-link fa fa-trash-o" aria-hidden="true"></a></td>
 
 
             </tr>
@@ -55,6 +55,7 @@
 
         </table>
 </div>
+
 
 <div class="table-return">
     <a href="/rmn-project/homeView.php" class="txtstyle" title="Retour à la page d'accueil">Retourner à la page d'accueil</a>
@@ -66,11 +67,32 @@
 $(function() {
     $('.delete-link').on("click", function(event) {
         event.preventDefault();
+        var deleteLink = $(this);
 
-        var r = confirm("Voulez-vous vraiment supprimer ce contact?");
-        if (r === true) {
-            window.location = $(this).attr('href');
-        }
+        var r = sweetAlert({
+            title: "Êtes-vous sûr(e)?",
+            text: "Voulez-vous vraiment supprimer ce contact?",
+            type: "warning",
+            showCancelButton: true,
+            cancelButtonText: "Annuler",
+            confirmButtonText: "Supprimer",
+            confirmButtonColor: "#DD6B55",
+            animation: "slide-from-bottom"
+        }, function(){
+
+            $.ajax({
+                method: "GET",
+                url: "ajax.php",
+                data: { delete: deleteLink.attr("data-id") }
+            })
+            .done(function( response ) {
+                var dataResponse = $.parseJSON(response);
+                if(dataResponse.valid === true) {
+
+                    deleteLink.closest("tr").hide("slow");
+                }
+            });
+        });
 
     });
 });
